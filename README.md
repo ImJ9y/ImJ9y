@@ -1,6 +1,6 @@
 ## Hi, I'm Jay 👋
 
-**Computer Engineering M.S. @ Santa Clara University** · I work across the full stack — from **RTL, DFT, and FPGA acceleration** to **backend systems and ML pipelines**
+**Computer Science and Engineering M.S. @ Santa Clara University** · I work across the full stack — from **RTL, DFT, and FPGA acceleration** to **backend systems and ML pipelines**
 
 I'm interested in the space where hardware and software meet: accelerating ML on FPGAs, making silicon testable, verifying complex digital designs, and building reliable production systems. 4+ years of industry software experience, now going deep on the hardware side.
  
