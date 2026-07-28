@@ -2,7 +2,12 @@
 
 **Computer Science and Engineering M.S. @ Santa Clara University** · I work across the full stack — from **RTL, DFT, and FPGA acceleration** to **backend systems and ML pipelines**
 
-I'm interested in the space where hardware and software meet: accelerating ML on FPGAs, making silicon testable, verifying complex digital designs, and building reliable production systems. 4+ years of industry software experience, now going deep on the hardware side.
+### 💻 Software
+**4+ years shipping production systems** for enterprise clients including Under Armour, Michael Kors, and Skechers.
+- **Backend Engineering** — Built a virtual try-on microservice @ fAIshion.ai (Gemini 2.5 Flash, ~15s processing, 100% success rate) with a TypeScript/Next.js high-availability fallback system
+- **Enterprise Integration** — API integrations and data pipelines (C#/.NET, Java, SQL) for Dynamics 365 and order-fulfillment platforms; Kafka-based monitoring that cut unplanned downtime **40%**
+- **DevOps & Cloud** — Azure DevOps CI/CD pipelines reducing deployment time 40%; AWS-backed architectures with 99.9% uptime
+- **ML & Research** — LLM evaluation frameworks (deception detection across 1M+ reviews with an Amazon Applied Scientist); YOLOv8 real-time pose detection that won the **AWS x INRIX Hack 2025** 🏆
  
 ### 🔬 FPGA & Acceleration
 **FPGA Research Assistant @ SCU** — re-architected a LeNet-5 CNN accelerator into a streaming HLS dataflow design on a Xilinx Zynq-7020, cutting inference latency **~12x** (14.5M → 1.2M cycles) via pipelining, memory partitioning, and `ap_fixed` quantization — verified against a golden reference model.
@@ -14,16 +19,9 @@ I'm interested in the space where hardware and software meet: accelerating ML on
 - **Scan & Test Coverage** — Inserted **160 scan flops** achieving **97.45% test coverage** with TestMAX DFT; analyzed SRAM DFT structure impact on coverage
 - **ATPG & Compression** — Reached **90.51% fault coverage with 62 patterns**; evaluated 2:1 / 4:1 / 8:1 test compression tradeoffs across stuck-at modeling, BIST, MBIST, and JTAG/boundary scan
 - **Functional Verification** — UVM-style SystemVerilog testbenches with modular VIP components (driver, monitor, scoreboard), constrained-random stimulus, SVA assertions, and functional coverage sign-off
-
-### 💻 Software
-**4+ years shipping production systems** for enterprise clients including Under Armour, Michael Kors, and Skechers.
-- **Backend Engineering** — Built a virtual try-on microservice @ fAIshion.ai (Gemini 2.5 Flash, ~15s processing, 100% success rate) with a TypeScript/Next.js high-availability fallback system
-- **Enterprise Integration** — API integrations and data pipelines (C#/.NET, Java, SQL) for Dynamics 365 and order-fulfillment platforms; Kafka-based monitoring that cut unplanned downtime **40%**
-- **DevOps & Cloud** — Azure DevOps CI/CD pipelines reducing deployment time 40%; AWS-backed architectures with 99.9% uptime
-- **ML & Research** — LLM evaluation frameworks (deception detection across 1M+ reviews with an Amazon Applied Scientist); YOLOv8 real-time pose detection that won the **AWS x INRIX Hack 2025** 🏆
  
 ### 🎯 Open To
-`DFT Engineering` · `FPGA Engineering` · `Software Engineering` · `ML Infrastructure`
+`Software Engineering` · `DFT Engineering` · `FPGA Engineering` · `ML Infrastructure`
  
 ### 📚 Up Next
 Embedded Systems · VLSI Design I *(next quarter)*
