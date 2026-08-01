@@ -1,6 +1,6 @@
 ## Hi, I'm Jay 👋
 
-**Computer Science and Engineering M.S. @ Santa Clara University** · I work across the full stack — from **RTL, DFT, and FPGA acceleration** to **backend systems and ML pipelines**
+**Computer Science and Engineering M.S. @ Santa Clara University** · with a background in software engineering, AI, and hardware acceleration.
 
 ### 💻 Software
 **4+ years shipping production systems** for enterprise clients including Under Armour, Michael Kors, and Skechers.
