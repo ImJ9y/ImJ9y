@@ -1,18 +1,25 @@
 ## Hi, I'm Jay 👋
 
-**Computer Science and Engineering M.S. @ Santa Clara University** · with a background in software engineering, AI, and hardware acceleration.
+**Computer Science and Engineering M.S. @ Santa Clara University** · with a background in software engineering, AI, hardware acceleration, and embedded systems.
 
 ### 💻 Software
 **4+ years shipping production systems** for enterprise clients including Under Armour, Michael Kors, and Skechers.
 - **Backend Engineering** — Built a virtual try-on microservice @ fAIshion.ai (Gemini 2.5 Flash, ~15s processing, 100% success rate) with a TypeScript/Next.js high-availability fallback system
 - **Enterprise Integration** — API integrations and data pipelines (C#/.NET, Java, SQL) for Dynamics 365 and order-fulfillment platforms; Kafka-based monitoring that cut unplanned downtime **40%**
 - **DevOps & Cloud** — Azure DevOps CI/CD pipelines reducing deployment time 40%; AWS-backed architectures with 99.9% uptime
-- **ML & Research** — LLM evaluation frameworks (deception detection across 1M+ reviews with an Amazon Applied Scientist); YOLOv8 real-time pose detection that won the **AWS x INRIX Hack 2025** 🏆
+- **ML & Research** — LLM evaluation frameworks (deception detection across 1M+ reviews with an Amazon Applied Scientist); YOLOv8 real-time pose detection that won the **AI-track Graduate Prize at AWS x INRIX Hack 2025** 🏆
  
 ### 🔬 FPGA & Acceleration
+📄 **First-author paper accepted to IEEE MCSoC-2026** — an FPGA CNN accelerator in Vitis HLS that fuses convolution with max-pooling in a line-buffer dataflow, removing the intermediate feature map entirely: **9.7× fewer cycles** (38,590 → 3,978) and **2.5× fewer LUTs** than the unfused design, verified bit-exact on a PYNQ-Z2 over AXI DMA. Source and measurement data released with a Zenodo DOI.
+
 **FPGA Research Assistant @ SCU** — re-architected a LeNet-5 CNN accelerator into a streaming HLS dataflow design on a Xilinx Zynq-7020, cutting inference latency **~12x** (14.5M → 1.2M cycles) via pipelining, memory partitioning, and `ap_fixed` quantization — verified against a golden reference model.
 - **HLS Optimization** — Loop unrolling, pipelining, and array partitioning under a hard 10ns timing target; identified 16-bit fixed-point as the minimum width preserving classification accuracy
 - **HW/SW Co-Design** — AXI4-Lite memory-mapped and streaming interfaces bridging FPGA fabric to ARM host with Vitis HLS + PYNQ; benchmarked ML inference speedup vs. CPU
+
+### ⚙️ Embedded Systems & OS
+- **Real-Time Firmware** — FreeRTOS on an STM32 (ARM Cortex-M4): an interrupt-driven temperature monitor with deferred ISR processing via binary semaphore, a mutex-protected threshold, and zero-timeout queues, losing **no readings** during alert handling; a 3-task accelerometer classifier (stationary / walking / running) where sending 50-sample windows as single queue items cut model wakeups **50×**
+- **Trace-Driven Debugging** — Used ARM SWV trace to catch a UART call silently returning `HAL_BUSY` (task runs of just **3.4 µs**), cooperative-mode starvation, and a **100 → 160 ms** period drift fixed with `vTaskDelayUntil`; validated a rate-monotonic task set at 70% utilization against the 82.8% bound
+- **xv6 Kernel (C, RISC-V, QEMU)** — Added system calls for process, syscall, and free-page statistics using lock-protected kernel traversal and a `copyout` that rejects NULL and unmapped pointers; co-built lottery and stride proportional-share schedulers, selectable at build time, passing all 53 xv6 usertests
 
 ### 🧪 DFT & Verification 
 - **Synthesis & Timing** — Synthesized RTL to SAED 32nm RVT cells with Synopsys Design Compiler (`compile_ultra`); applied clock constraints, I/O delays, and fanout limits, verifying timing closure via STA
@@ -21,20 +28,24 @@
 - **Functional Verification** — UVM-style SystemVerilog testbenches with modular VIP components (driver, monitor, scoreboard), constrained-random stimulus, SVA assertions, and functional coverage sign-off
  
 ### 🎯 Open To
-`Software Engineering` · `DFT Engineering` · `FPGA Engineering` · `ML Infrastructure`
+`Software Engineering` · `Embedded / Firmware Engineering` · `DFT Engineering` · `FPGA Engineering` · `ML Infrastructure`
  
-### 📚 Up Next
-Embedded Systems · VLSI Design I *(next quarter)*
+### 📚 Now & Next
+Embedded Systems · Advanced Operating Systems *(this quarter)* · VLSI Design I *(next quarter)*
  
 ### 📫 Reach Me + Socials:
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://facebook.com/im.jeonghun.1) [![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/j9y_im) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/j9yim) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:jayim1996@outlook.com) 
 
 ## 💻 Tech Stack:
 ### Languages
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-1A1A2E?style=for-the-badge) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
+![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![SystemVerilog](https://img.shields.io/badge/SystemVerilog-1A1A2E?style=for-the-badge) ![SQL](https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logoColor=white) ![PowerShell](https://img.shields.io/badge/PowerShell-%235391FE.svg?style=for-the-badge&logo=powershell&logoColor=white) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![PHP](https://img.shields.io/badge/php-%23777BB4.svg?style=for-the-badge&logo=php&logoColor=white)
  
 ### Hardware & FPGA
 ![AMD](https://img.shields.io/badge/AMD%20Xilinx-%23000000.svg?style=for-the-badge&logo=amd&logoColor=white) ![Vivado](https://img.shields.io/badge/Vivado-AA0000?style=for-the-badge&logo=amd&logoColor=white) ![Vitis HLS](https://img.shields.io/badge/Vitis%20HLS-CC0033?style=for-the-badge&logo=amd&logoColor=white) ![PYNQ](https://img.shields.io/badge/PYNQ-8A2BE2?style=for-the-badge) ![UVM](https://img.shields.io/badge/UVM-2F4858?style=for-the-badge) ![Synopsys](https://img.shields.io/badge/Synopsys%20DC%2FTestMAX-5A2D82?style=for-the-badge) ![AXI](https://img.shields.io/badge/AXI%20Protocol-004466?style=for-the-badge)
+
+### Embedded & OS
+![FreeRTOS](https://img.shields.io/badge/FreeRTOS-3D8B37?style=for-the-badge) ![STM32](https://img.shields.io/badge/STM32-03234B?style=for-the-badge&logo=stmicroelectronics&logoColor=white) ![ARM Cortex-M4](https://img.shields.io/badge/ARM%20Cortex--M4-0091BD?style=for-the-badge&logo=arm&logoColor=white) ![RISC-V](https://img.shields.io/badge/RISC--V-283272?style=for-the-badge&logo=riscv&logoColor=white) ![QEMU](https://img.shields.io/badge/QEMU-FF6600?style=for-the-badge&logo=qemu&logoColor=white) ![xv6](https://img.shields.io/badge/xv6-555555?style=for-the-badge)
+
 ### Backend & Frameworks
 ![.Net](https://img.shields.io/badge/.NET-5C2D91?style=for-the-badge&logo=.net&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white) ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) ![Dynamics 365](https://img.shields.io/badge/Dynamics%20365-0B53CE?style=for-the-badge&logo=microsoft&logoColor=white)
  
