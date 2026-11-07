@@ -28,7 +28,7 @@
 - **Functional Verification** — UVM-style SystemVerilog testbenches with modular VIP components (driver, monitor, scoreboard), constrained-random stimulus, SVA assertions, and functional coverage sign-off
  
 ### 🎯 Open To
-`Software Engineering` · `Embedded / Firmware Engineering` · `DFT Engineering` · `FPGA Engineering` · `ML Infrastructure`
+`Software Engineering` · `Embedded / Firmware Engineering` · `System Engineering` · `FPGA Engineering` · `ML Infrastructure`
  
 ### 📚 Now & Next
 Embedded Systems · Advanced Operating Systems *(this quarter)* · VLSI Design I *(next quarter)*
