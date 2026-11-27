@@ -30,10 +30,10 @@ Working across both has taught me that the biggest performance gains often come 
 - **Functional Verification:** UVM-style SystemVerilog testbenches (driver, monitor, scoreboard) with constrained-random stimulus, SVA assertions, and functional coverage
 ### 💻 Production Software
  
-**4+ years shipping production systems** across enterprise retail, utility billing, and AI products.
+**4+ years shipping production systems** across enterprise retail, utility ERP, and AI products.
  
 - **AI Backend @ fAIshion.ai:** Cut virtual try-on image generation from **40 s to 15 s** and raised the success rate to **100%** by migrating from a self-hosted ComfyUI pipeline to Gemini 2.5 Flash Image; built multi-provider failover in TypeScript/Next.js; migrated production MongoDB to Atlas with zero data loss
-- **Utility Billing @ Itineris:** Shipped **100+ features across 20 releases with zero rollbacks** on a Dynamics 365 billing platform serving NYC DEP; cut deployment time from **45 to 10 minutes** with Python and PowerShell automation
+- **Utility ERP @ Itineris:** Shipped **100+ features across 20 releases with zero rollbacks** on a Dynamics 365 ERP platform serving NYC DEP; cut deployment time from **45 to 10 minutes** with Python and PowerShell automation
 - **Enterprise Retail:** Built and supported API integrations and data pipelines (C#/.NET, Java, SQL) for order-fulfillment systems behind Under Armour, Michael Kors, and Skechers
 - **ML Research & Hackathons:** Built Python evaluation pipelines for multilingual LLM-text detection across 1M+ reviews with an Amazon Applied Scientist. **[Catch](https://devpost.com/software/catch-sojatf)** won the **AI-track Graduate Prize at AWS x INRIX Hack 2025**: real-time fall detection with YOLOv8-pose at 30+ FPS, cutting false positives 60%
 ### 🎯 Open To
